@@ -25,7 +25,7 @@ lines(nona$DateTimeActual, nona$Sub_metering_2, col = "red")
 lines(nona$DateTimeActual, nona$Sub_metering_3, col = "blue")
 
 # Add Legend with colored lines slightly thicker than default
-legend(x = "topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), col = c("black", "red", "blue"), lty = c(1, 1 , 1 ), lwd = 2)
+legend(x = "topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), col = c("black", "red", "blue"), lty = c(1, 1 , 1 ))
 
 # close it off so we actually have a file...
 dev.off()

@@ -21,7 +21,7 @@ png(file = "plot4.png")
 par(mfcol = c(2, 2))
 #################################
 # Create plot 1 without data
-plot(x=nona$DateTimeActual, y= nona$Global_active_power, type = "n", xlab ="", ylab="Global Active Power (kilowatts)")
+plot(x=nona$DateTimeActual, y= nona$Global_active_power, type = "n", xlab ="", ylab="Global Active Power")
 
 # Add the plot line
 lines(nona$DateTimeActual, nona$Global_active_power)
@@ -37,7 +37,7 @@ lines(nona$DateTimeActual, nona$Sub_metering_2, col = "red")
 lines(nona$DateTimeActual, nona$Sub_metering_3, col = "blue")
 
 # Add Legend with colored lines slightly thicker than default and without box around legend
-legend(x = "topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), col = c("black", "red", "blue"), lty = c(1, 1 , 1 ), lwd = 2, bty = "n")
+legend(x = "topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), col = c("black", "red", "blue"), lty = c(1, 1 , 1 ), bty = "n")
 #################################
 
 #################################
